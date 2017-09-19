@@ -19,12 +19,13 @@ class ArticleListViewController: UIViewController {
         
         table.frame = view.frame
         view.addSubview(table)
+        getArticles()
     }
     
     func getArticles() {
         Alamofire.request(get, "https://newsapi.org/v1/articles")
         .responseJSON{ in
-            
+            print(response.result.value)
         }
     }
     
