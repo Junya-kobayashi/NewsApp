@@ -8,6 +8,10 @@
 
 import UIKit
 
+import Alamofire
+import Kingfisher
+import SwiftyJSON
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
